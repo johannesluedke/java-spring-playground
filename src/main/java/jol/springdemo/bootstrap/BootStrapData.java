@@ -6,6 +6,8 @@ import org.springframework.stereotype.Component;
 import jol.springdemo.domain.Customer;
 import jol.springdemo.repositories.CustomerRepository;
 
+import java.lang.reflect.Method;
+
 @Component
 public class BootStrapData implements CommandLineRunner {
 
@@ -35,5 +37,10 @@ public class BootStrapData implements CommandLineRunner {
         customerRepository.save(c3);
 
         System.out.println("Customers Saved:" + customerRepository.count());
+        System.out.println("Methods of Customer: ");
+
+        for (Method methodName : Customer.class.getMethods()) {
+            System.out.println(methodName.toString());
+        }
     }
 }
