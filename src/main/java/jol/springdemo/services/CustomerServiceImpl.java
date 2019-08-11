@@ -2,8 +2,11 @@ package jol.springdemo.services;
 
 import jol.springdemo.domain.Customer;
 import jol.springdemo.repositories.CustomerRepository;
+import org.springframework.stereotype.Service;
+
 import java.util.List;
 
+@Service
 public class CustomerServiceImpl implements CustomerService {
 
     private final CustomerRepository customerRepository;
@@ -18,7 +21,7 @@ public class CustomerServiceImpl implements CustomerService {
     }
 
     @Override
-    public List<Customer> finAllCustomers() {
+    public List<Customer> findAllCustomers() {
         return customerRepository.findAll();
     }
 }
