@@ -8,7 +8,7 @@
 		<version>2.1.7.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>java.jol</groupId>
+	<groupId>jol</groupId>
 	<artifactId>java-spring-playground</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>java-spring-playground</name>
@@ -19,6 +19,10 @@
 	</properties>
 
 	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>

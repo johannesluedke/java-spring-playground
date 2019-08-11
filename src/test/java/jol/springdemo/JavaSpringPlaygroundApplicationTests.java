@@ -1,4 +1,4 @@
-package java.jol.springdemo;
+package jol.springdemo;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
